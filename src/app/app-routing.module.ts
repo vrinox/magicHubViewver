@@ -5,6 +5,7 @@ import { JugadoresComponent } from './jugadores/jugadores.component';
 import { DecksComponent } from './decks/decks.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/jugadores', pathMatch: 'full' },
   { path: 'precios'   , component: PreciosComponent },
   { path: 'decks'     , component: DecksComponent },
   { path: 'jugadores' , component: JugadoresComponent },
