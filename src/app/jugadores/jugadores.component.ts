@@ -26,6 +26,9 @@ export class JugadoresComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.buscar();
+  }
+  buscar(){
     this.magicHub.buscarUsuario(this.searchTerm$)
       .subscribe((usuarios:Usuario[])=>{
         this.usuarios = usuarios;
